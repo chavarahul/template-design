@@ -1,5 +1,6 @@
 import React from 'react'
 import { ThemeToggle } from '../ui/index'
+import AuthModel from '../auth/authModel'
 
 const Navbar = () => {
   return (
@@ -10,6 +11,7 @@ const Navbar = () => {
         </h1>
         <nav className="borders w-1/5 h-full relative flex items-center justify-evenly">
           <ThemeToggle />
+          <AuthModel />
         </nav>
       </div>
     </header>
