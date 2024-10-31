@@ -40,10 +40,10 @@ const Hero = () => {
                     {splitText('THIS')}
                 </p>
             </div>
-            <div className="flex justify-between w-[98%] lg:-mt-10 overflow-hidden flex-col md:flex-row">
+            <div className="flex justify-between w-full lg:-mt-10 overflow-hidden flex-col md:flex-row">
                 <p ref={(el) => { textRef.current[2] = el }} className='font-normal text-[9.8vw] relative max-md:text-[60px]'>
                     {splitText('ELEVATES')}
-                    <span className='h-full w-[20%] absolute max-xl:hidden -right-40 flex items-center bottom-0 '>
+                    <span className='h-full w-[20%] absolute max-xl:hidden -right-36 flex items-center bottom-0 '>
                         <img 
                          alt='HeroImage'
                          src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdeMrtXbj94ZWlC2Gh45_h7YJ5lF66OEbO9Q&s'} 
@@ -55,12 +55,12 @@ const Hero = () => {
                     {splitText('YOURSS')}
                 </p>
             </div>
-            <div className="relative w-full flex items-end  justify-end px-10 max-md:px-5">
+            <div className="relative w-full flex items-end  justify-end -mt-5 max-md:px-5">
                 <p className='text-left w-1/6 '>
                 Iure amet voluptatum reprehenderit  wvwv wvwv wv wv rwenwvriwn
                 </p>
             </div>
-            <div className="relative w-full  flex h-20 mt-20 items-center justify-evenly flex-col">
+            <div className="relative w-full flex h-20 mt-28 items-center justify-evenly flex-col">
                 <p className='font-medium text-sm'>Scroll down</p>
                 <ChevronDown className='text-sm -mt-2 h-4 animate-bounce' />
             </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { poppin } from "./constants";
 import { ThemeProvider } from "@/app/components/ui/index";
+import SmoothScroll from "./components/common/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,13 +19,15 @@ export default function RootLayout({
       <body
         className={`antialiased ${poppin.className}`}
       >
-         <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
         </ThemeProvider>
       </body>
     </html>

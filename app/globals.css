@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:where(body,html)::-webkit-scrollbar{
+  width: 0px;
+}
+
+
 @layer base {
   :root {
     --background: 201 16% 88%;
