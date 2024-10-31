@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Dialog } from '../ui'
-import { DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
+import { DialogContent, DialogHeader, DialogTrigger } from '../ui/dialog'
 import SubmitButton from './Button'
 import { signIn } from '@/lib/auth'
 
@@ -14,9 +14,6 @@ const AuthModel = () => {
                 <DialogHeader className='flex justify-center items-center'>
                     <h3 className='font-semibold text-xl'>LogoNAme</h3>
                 </DialogHeader>
-                <DialogTitle className='hidden'>
-                    <h1 className='hidden'>Authentication Modal</h1>
-                </DialogTitle>
                 <div className="flex flex-col gap-4 mt-1">
                     <form action={async () => {
                         "use server";
