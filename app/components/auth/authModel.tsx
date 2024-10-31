@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Dialog } from '../ui'
 import { DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 import SubmitButton from './Button'
+import { signIn } from '@/lib/auth'
 
 const AuthModel = () => {
     return (
@@ -17,11 +18,17 @@ const AuthModel = () => {
                     <h1 className='hidden'>Authentication Modal</h1>
                 </DialogTitle>
                 <div className="flex flex-col gap-4 mt-1">
-                    <form action={async()=>{
+                    <form action={async () => {
                         "use server";
-                        
+                        await signIn("google");
                     }}>
                         <SubmitButton type='submit' text='Sign in with Google' />
+                    </form>
+                    <form action={async () => {
+                        "use server";
+                        await signIn("github");
+                    }}>
+                        <SubmitButton type='submit' text='Sign in with Github' />
                     </form>
                 </div>
             </DialogContent>
